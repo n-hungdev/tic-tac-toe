@@ -5,7 +5,7 @@ import Square from './Square'
 const Board: React.FC = () => {
   const [squares, setSquares] = useState<any[]>(() => Array(9).fill(null))
   const [xIsNext, setXIsNext] = useState<boolean>(true)
-  console.log('first render')
+
   const handleClick = (i: number): void => {
     const squaresCopy = squares.slice()
     if (squaresCopy[i] || playerWinner(squaresCopy)) return // win or draw return
