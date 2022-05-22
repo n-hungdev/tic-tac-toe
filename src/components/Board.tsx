@@ -4,7 +4,7 @@ import Square from './Square'
 
 const Board: React.FC = () => {
   const [squares, setSquares] = useState<any[]>(() => Array(9).fill(null))
-  const [xIsNext, setXIsNext] = useState<boolean>(true)
+  const [xIsNext, setXIsNext] = useState<boolean>(false)
 
   const handleClick = (i: number): void => {
     const squaresCopy = squares.slice()
